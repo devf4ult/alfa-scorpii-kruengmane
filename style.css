@@ -1,0 +1,154 @@
+
+    .animated-img {
+      transition: transform 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+    }
+  
+    .animated-img:hover {
+      transform: translateX(10px); /* Pindahkan gambar ke kanan saat dihover */
+      border-radius: 10px; /* Tambahkan efek runcing saat dihover */
+    }
+    .logo-container {
+      width: 120px;
+      height: 120px;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .logo {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: contain;
+      transition: transform 1s ease-in-out;
+    }
+    
+    .logo-container:hover .logo {
+      transform: rotate(1060deg);
+    }ect-fit: contain;
+    }
+    
+    @keyframes wheelRotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+    .logo-container:hover {
+      animation-play-state: paused;
+    }
+    
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+  
+    .card:hover {
+      transform: translateY(-5px);
+    }
+  
+    .card-img-top {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .card-body {
+      padding: 15px;
+    }
+  
+    .card-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+  
+    .card-text {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+  
+    .btn {
+      display: inline-block;
+      padding: 8px 12px;
+      background: linear-gradient(45deg, #3498db, #2980b9);
+      color: #fff;
+      border: none;
+      border-radius: 0;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      transform: skew(-20deg);    
+    }
+  
+    .btn:hover {
+      background-color: #2980b9;
+    }
+  
+    .form-control {
+      transform: skew(-20deg);
+      border-radius: 4px;
+    }
+  
+    #searchInput {
+      height: 50px;
+    }
+  
+    .display-6 {
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+      margin-bottom: 10px;
+    }
+  
+    .social-icons {
+      font-size: 24px;
+    }
+  
+    .falling-text {
+      opacity: 0;
+      transform: translateY(-10%);
+      animation: fall 1s ease-in-out forwards;
+    }
+  
+    @keyframes fall {
+      0% {
+        opacity: 0;
+        transform: translateY(-10%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    .animated-bg {
+      background: linear-gradient(45deg, #5f41ab, #005dc1);
+      background-size: 400% 400%;
+      animation: gradientSlide 10s linear infinite;
+    }
+  
+    @keyframes gradientSlide {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+  
+    .subtle-color-text {
+      font-size: 36px;
+      font-weight: bold;
+      color: #ff6b6b;
+      transition: color 2s ease-in-out;
+    }
+  
+    .subtle-color-text:hover {
+      color: #c4d647;
+    }
+  
